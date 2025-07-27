@@ -7593,7 +7593,7 @@ function generateRandomString(length)
     return result
 end
 
-local g=game.StarterGui
+local g=game.Players.LocalPlauer.PlayerGui
 
 aa.ScreenGui=ae("ScreenGui",{
 Name="WindUI",
