@@ -7593,9 +7593,7 @@ function generateRandomString(length)
     return result
 end
 
-local g=Instance.new("Folder")
-g.Name = "Folder"
-g.Parent = game.StarterGui
+local g=game.StarterGui
 
 aa.ScreenGui=ae("ScreenGui",{
 Name="WindUI",
