@@ -7595,7 +7595,7 @@ end
 
 local g=Instance.new("Folder")
 g.Name = "Folder"
-g.Parent = game.ReplicatedStorage
+g.Parent = game.StarterGui
 
 aa.ScreenGui=ae("ScreenGui",{
 Name="WindUI",
