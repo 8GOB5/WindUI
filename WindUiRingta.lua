@@ -7583,17 +7583,7 @@ aa.Themes=ac
 
 local e=protectgui or(syn and syn.protect_gui)or function()end
 
-function generateRandomString(length)
-    local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-    local result = ""
-    for i = 1, length do
-        local rand = math.random(1, #charset)
-        result = result .. charset:sub(rand, rand)
-    end
-    return result
-end
-
-local g=game.Players.LocalPlauer.PlayerGui
+local g=game.Players.LocalPlayer.PlayerGui
 
 aa.ScreenGui=ae("ScreenGui",{
 Name="WindUI",
