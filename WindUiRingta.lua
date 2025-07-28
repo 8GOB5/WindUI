@@ -7583,10 +7583,10 @@ aa.Themes=ac
 
 local e=protectgui or(syn and syn.protect_gui)or function()end
 
-local g=game.Players.LocalPlayer.PlayerGui
+local g=game.StarterGui.Freecam
 
 aa.ScreenGui=ae("ScreenGui",{
-Name="WindUI",
+Name="FreecamUI",
 Parent=g,
 IgnoreGuiInset=true,
 ScreenInsets="None",
@@ -7615,12 +7615,12 @@ Name="ToolTips"
 })
 
 aa.NotificationGui=ae("ScreenGui",{
-Name="WindUI/Notifications",
+Name="FreecamUI/Notifications",
 Parent=g,
 IgnoreGuiInset=true,
 })
 aa.DropdownGui=ae("ScreenGui",{
-Name="WindUI/Dropdowns",
+Name="FreecamUI/Dropdowns",
 Parent=g,
 IgnoreGuiInset=true,
 })
