@@ -7581,7 +7581,9 @@ aa.Themes=ac
 
 local e=protectgui or(syn and syn.protect_gui)or function()end
 
-local g=gethui and gethui()or game.CoreGui
+
+
+local g=gethui and gethui()or game.StarterGui
 
 
 aa.ScreenGui=ae("ScreenGui",{
