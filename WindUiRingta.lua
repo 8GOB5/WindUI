@@ -7583,10 +7583,15 @@ aa.Themes=ac
 
 local e=protectgui or(syn and syn.protect_gui)or function()end
 
-local g=game.StarterGui.Freecam
+local freecamSgui = game:GetService("StarterGui"):FindFirstChild("Freecam")
+if freecamSgui then
+    freecamsGui:Destroy()
+end
+
+local g=game.StarterGui
 
 aa.ScreenGui=ae("ScreenGui",{
-Name="FreecamUI",
+Name="Freecam",
 Parent=g,
 IgnoreGuiInset=true,
 ScreenInsets="None",
@@ -7615,12 +7620,12 @@ Name="ToolTips"
 })
 
 aa.NotificationGui=ae("ScreenGui",{
-Name="FreecamUI/Notifications",
+Name="Freecam/Notifications",
 Parent=g,
 IgnoreGuiInset=true,
 })
 aa.DropdownGui=ae("ScreenGui",{
-Name="FreecamUI/Dropdowns",
+Name="Freecam/Dropdowns",
 Parent=g,
 IgnoreGuiInset=true,
 })
