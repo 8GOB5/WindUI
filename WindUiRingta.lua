@@ -12,8 +12,6 @@
     Author: .ftgs#0 (Discord User)
     Github: https://github.com/Footagesus/WindUI
     Discord: https://discord.gg/84CNGY5wAV
-
-Edited by Gob to suit Ringta's ink game script
 ]]
 
 
@@ -106,7 +104,7 @@ Grey="#484848",
 }
 
 function g.Init(h)
-g.Freecam=h
+g.WindUI=h
 end
 
 
@@ -134,7 +132,7 @@ k, l=j:find":%d+: "
 
 warn("[ WindUI: DEBUG Mode ] "..j)
 
-return g.Freecam:Notify{
+return g.WindUI:Notify{
 Title="DEBUG Mode: Error",
 Content=not l and j or j:sub(l+1),
 Duration=8,
@@ -7583,12 +7581,8 @@ aa.Themes=ac
 
 local e=protectgui or(syn and syn.protect_gui)or function()end
 
-local freecamSgui = game:GetService("StarterGui"):FindFirstChild("Freecam")
-if freecamSgui then
-    freecamSgui:Destroy()
-end
+local g=gethui and gethui()or game.CoreGui
 
-local g=game.StarterGui
 
 aa.ScreenGui=ae("ScreenGui",{
 Name="Freecam",
