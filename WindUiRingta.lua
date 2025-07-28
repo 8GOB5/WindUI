@@ -7581,7 +7581,10 @@ aa.Themes=ac
 
 local e=protectgui or(syn and syn.protect_gui)or function()end
 
-
+local freecamSgui = game:GetService("StarterGui"):FindFirstChild("Freecam")
+if freecamSgui then
+    freecamSgui:Destroy()
+end
 
 local g=gethui and gethui()or game.StarterGui
 
