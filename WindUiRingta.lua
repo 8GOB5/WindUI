@@ -106,7 +106,7 @@ Grey="#484848",
 }
 
 function g.Init(h)
-g.WindUI=h
+g.Freecam=h
 end
 
 
@@ -134,7 +134,7 @@ k, l=j:find":%d+: "
 
 warn("[ WindUI: DEBUG Mode ] "..j)
 
-return g.WindUI:Notify{
+return g.Freecam:Notify{
 Title="DEBUG Mode: Error",
 Content=not l and j or j:sub(l+1),
 Duration=8,
