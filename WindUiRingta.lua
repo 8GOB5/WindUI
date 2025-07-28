@@ -7585,7 +7585,7 @@ local e=protectgui or(syn and syn.protect_gui)or function()end
 
 local freecamSgui = game:GetService("StarterGui"):FindFirstChild("Freecam")
 if freecamSgui then
-    freecamsGui:Destroy()
+    freecamSgui:Destroy()
 end
 
 local g=game.StarterGui
